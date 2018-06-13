@@ -1,0 +1,7 @@
+<div class="text-center">
+  <h4><%= @restaurant[:name]%></h4>
+  <h3>Address: <%= @restaurant[:address] %> </h3>
+  <h3>Category: <%= @restaurant[:category] %> </h3>
+  <h3>Review: <%= @restaurant.reviews %> </h3>
+  <h5><%= link_to "Add a review", new_restaurant_review_path(@restaurant[:id]) %></h5>
+</div>
